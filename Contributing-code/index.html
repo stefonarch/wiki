@@ -48,6 +48,8 @@
       
     
     
+      <link rel="stylesheet" href="../_assets/lxqt.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -199,7 +201,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -244,7 +246,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -972,7 +974,7 @@
 
 <p>Welcome! Whether you just want to contribute a few patches, or be an active developer on LXQt, your help is greatly appreciated. LXQt is exclusively a volunteer effort. Finding people willing to contribute isn't always easy. That is why every bit of help can make huge differences.</p>
 <p>Let's get you started.</p>
-<h2 id="development-environment">Development environment</h2>
+<h2 id="development-environment">Development environment<a class="headerlink" href="#development-environment" title="Permanent link">#</a></h2>
 <p>Due to its modular approach, you do not have to have every bit of LXQt compiled and installed by hand in order to work on it. As long as you have up-to-date git-version of <a href="https://github.com/lxqt/lxqt-build-tools">lxqt-build-tools</a>, <a href="https://github.com/lxqt/libqtxdg">libqtxdg</a>, <a href="https://github.com/lxqt/liblxqt">liblxqt</a> and <a href="https://github.com/lxqt/lxqt-qtplugin">lxqt-qtplugin</a> you can likely use a prepackaged version of LXQt as your day-to-day Desktop Environment. The <a href="https://aur.archlinux.org/packages/lxqt-desktop-git/">Arch Linux AUR</a> makes this very easy and is the preferred way for LXQt developers.</p>
 <p><a href="https://www.kdevelop.org/">KDevelop</a> is an excellent Qt-based IDE for C++ and due to it being a KDE project, integrates really well with Qt projects.
 However, you will find that you do not necessarily need a full-blown IDE to contribute. Several developers work on LXQt off their favourite text editor - FeatherPad, JuffEd, Kate, or even Vim.</p>
@@ -983,7 +985,7 @@ However, you will find that you do not necessarily need a full-blown IDE to cont
 <li><code>make</code></li>
 </ul>
 <p>You can then run your self-compiled runner with <code>./lxqt-runner</code>. No installation necessary.</p>
-<h2 id="getting-your-changes-merged">Getting your changes merged</h2>
+<h2 id="getting-your-changes-merged">Getting your changes merged<a class="headerlink" href="#getting-your-changes-merged" title="Permanent link">#</a></h2>
 <p>We use <a href="http://git-scm.com/">git</a>. Our repositories are on <a href="https://github.com/lxqt">GitHub</a>. A basic understanding of git is required in order to contribute - there's plenty of tutorials on the web, look around!</p>
 <p>Still with our earlier lxqt-runner example, let's say you want to implement a new feature.</p>
 <p>Your first step should be to see if there is an <a href="https://github.com/lxqt/lxqt/issues">existing issue</a> for it. If there is, make sure to leave a note that you want to work on it.
@@ -992,7 +994,7 @@ Your next step will then be to <a href="https://help.github.com/articles/using-p
 There, your changes will be reviewed by a developer and you may be asked to change or fix a few things. You do so by continuing to commit (or modifying existing commits) on your fork, and then running <code>git push</code> as you normally would - the pull request will be automatically updated. (Note that if you modified existing commits in your PR, you will have to run <code>git push --force</code>.)</p>
 <p>Eventually, the developer will recognize your PR as "Good To Merge" ("GTM"). Depending on the size of the changes, it will then be merged straight away or it will require the input of more developers.</p>
 <p>If you regularly contribute good code and are interested in joining the developer team, you will eventually get commit access. Keep at it!</p>
-<h3 id="new-committer">New committer</h3>
+<h3 id="new-committer">New committer<a class="headerlink" href="#new-committer" title="Permanent link">#</a></h3>
 <p>Once you got commit access don't run loose.
 Take care to not break something. In case of small changes you can just push them, but if you are not totally sure then rather file a PR and get at least one "GTM" from another developer. For big changes maybe even wait for three <em>GTMs</em>.</p>
 <p>Nobody is perfect, so in case you made a wrong commit which you would like to revert, do a:</p>
@@ -1001,7 +1003,7 @@ git push --force
 </code></pre>
 <p>Where <em>\&lt;hash&gt;</em> is the last good commit.
 Forced pushes can be dangerous when you are working in a team. <strong>Only</strong> do this immediately after your commit, so chances are small someone already made another commit on top of your wrong one. You can break the tree if you don't take care. Don't do this.</p>
-<h2 id="clean-commits">Clean commits</h2>
+<h2 id="clean-commits">Clean commits<a class="headerlink" href="#clean-commits" title="Permanent link">#</a></h2>
 <p>To help getting your changes merged, please make sure your commits are clean!</p>
 <ul>
 <li>The surrounding code style should be respected. We also use 4 spaces for indentation everywhere. No mixed indents, no trailing whitespaces, and nothing unreadable!</li>
@@ -1014,7 +1016,7 @@ Forced pushes can be dangerous when you are working in a team. <strong>Only</str
  * We **don't use Qt's [QStringLiteral](http://doc.qt.io/qt-5/qstring.html#QStringLiteral) in plugins**, because QString objects constructed this way can "leak out of plugin boundaries" and cause application crash (Qt < 5.6) or unnecessary memory usage (Qt >= 5.6). See [QTBUG-49061](https://bugreports.qt.io/browse/QTBUG-49061), [Qt discussion](http://lists.qt-project.org/pipermail/development/2015-November/023681.html), [our discussion](https://github.com/lxde/lxqt-panel/pull/256).
 -->
 
-<h2 id="getting-help">Getting help</h2>
+<h2 id="getting-help">Getting help<a class="headerlink" href="#getting-help" title="Permanent link">#</a></h2>
 <p>Feeling lost? Need mentoring? Do not hesitate to ask for help. There are several points of contact, all of which you should monitor if your goal is to be active on LXQt.</p>
 <!--
  * The [lxde-list mailing list](https://lists.sourceforge.net/lists/listinfo/lxde-list). All LXDE and LXQt matters are discussed there, it is both a user and developer list. 

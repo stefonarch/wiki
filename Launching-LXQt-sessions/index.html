@@ -48,6 +48,8 @@
       
     
     
+      <link rel="stylesheet" href="../_assets/lxqt.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -199,7 +201,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -244,7 +246,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -936,7 +938,7 @@
 
 <p>LXQt X11 sessions are launched by a script <code>startlxqt</code> and handled by a binary ("session manager") <code>lxqt-session</code> which belongs to <a href="https://github.com/lxde/lxqt-session">lxqt-session</a>.  </p>
 <p>LXQt Wayland sessions are launched by a script <code>startlxqtwayland</code> instead. </p>
-<h2 id="launching-from-virtual-terminals">Launching from virtual terminals</h2>
+<h2 id="launching-from-virtual-terminals">Launching from virtual terminals<a class="headerlink" href="#launching-from-virtual-terminals" title="Permanent link">#</a></h2>
 <p>In Linux, add the following line to the file <code>~/.xinitrc</code>.</p>
 <pre><code class="language-shell">exec startlxqt
 </code></pre>
@@ -951,11 +953,11 @@ Ensure one of the following conditions is true regarding the <code>~/.xinitrc</c
 * multiple entries follow the rules described <a href="https://wiki.archlinux.org/title/xinit">here</a>.</p>
 </blockquote>
 <p>The Wayland session can be started directly invoking <code>startlxqtwayland</code>.</p>
-<h2 id="launching-by-display-managers">Launching by display managers</h2>
+<h2 id="launching-by-display-managers">Launching by display managers<a class="headerlink" href="#launching-by-display-managers" title="Permanent link">#</a></h2>
 <p>Display managers like <a href="https://github.com/sddm/sddm">SDDM</a>, the one recommended for LXQt, or LightDM are looking for available x11 sessions in files <code>$XDG_DATA_DIRS/xsessions/*.desktop</code> where <code>$XDG_DATA_DIRS</code> is set to <code>/usr/share/</code> most of the times,while for the Wayland sessions the directory is <code>/usr/share/wayland-sessions/</code>. 
 LXQt is providing the files <code>lxqt.desktop</code> and <code>lxqt-wayland.desktop</code> (if <code>lxqt-wayland-session</code> is installed) so its sessions should normally be detected and made available by display managers automatically, restarting the latter may be needed upon installing LXQt.   </p>
 <p>Note if LXQt was installed in <code>/usr/local</code> file <code>lxqt.desktop</code> is stored in <code>/usr/local/share/xsessions</code> which is <em>not</em> considered by most display managers. So you'll either have to copy the file to <code>/usr/share/xsessions/</code> or create a symbolic link.   </p>
-<h3 id="fixing-crashes-for-apps-using-dbus-daemon-common-when-using-lxqt-config-monitor">Fixing crashes for apps using dbus-daemon (common when using lxqt-config-monitor)</h3>
+<h3 id="fixing-crashes-for-apps-using-dbus-daemon-common-when-using-lxqt-config-monitor">Fixing crashes for apps using dbus-daemon (common when using lxqt-config-monitor)<a class="headerlink" href="#fixing-crashes-for-apps-using-dbus-daemon-common-when-using-lxqt-config-monitor" title="Permanent link">#</a></h3>
 <p>Important: This applies only to systems running systemd which have this problem.</p>
 <p>On some systems (like the default ArchLinux install), dbus-daemon is started as a systemd service before the xserver thus it has no $DISPLAY variable set in it's environment, leding to crashes. Systemd by default includes a script to fix this by fetching the variables in /etc/X11/xinit/xinitrc.d/50-systemd-user.sh. If you encounter this kind of crash add the following lines to your .xinitrc before <code>exec startlxqt</code></p>
 <pre><code class="language-shell">if [ -d /etc/X11/xinit/xinitrc.d ] ; then

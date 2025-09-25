@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="../_assets/lxqt.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -197,7 +199,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -242,7 +244,7 @@
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -1544,102 +1546,102 @@
 
   <h1>Building from Source</h1>
 
-<h2 id="introduction">Introduction</h2>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">#</a></h2>
 <p>While using precompiled binary packages will be appropriate most of the time compiling from sources may very well make sense, too, e. g. to run latest development versions if these aren't available on a particular operating system. So here's a guide how to achieve this.</p>
 <p>If running latest development snapshots is your intent please note that these can be compiled in a very convenient way on Arch Linux using its <a href="https://aur.archlinux.org">AUR</a> and that corresponding repositories exist in Debian and openSUSE as well, see [[Binary packages|Binary-packages]].   </p>
 <p>We'll try to be verbose yet basic knowledge about working on the shell, package management and how to compile using CMake and GNU make is needed.  <br />
 The descriptions stated below should work on any operating system of the *ix ecosystem, that is on all current Linux distributions as well as on BSD. For now distinct packages of Arch Linux, Debian / Ubuntu, Fedora and openSUSE are stated only. Additional distributions may be added.</p>
 <p>As for Debian to build the release 1.4.x Debian version 12 ("bookworm") is mandatory while to build version 2.0 and higher Debian 13 is needed.</p>
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
 <p>Before compiling it is strongly recommended to remove any preexisting LXQt and associated components which were installed other than according to this guide (updating by following the guide once more hasn't been thoroughly tested yet but should work without issues).   </p>
 <p>Next we need to install the dependencies to compile LXQt. These are the build environment as well as the various components needed by the software we are going to compile.   </p>
-<h3 id="build-environment">Build environment</h3>
+<h3 id="build-environment">Build environment<a class="headerlink" href="#build-environment" title="Permanent link">#</a></h3>
 <p>A CMake version ≥ 3.1.8 is required, see documentation of your distribution.   </p>
-<h4 id="arch-linux">Arch Linux</h4>
+<h4 id="arch-linux">Arch Linux<a class="headerlink" href="#arch-linux" title="Permanent link">#</a></h4>
 <pre><code>pacman --needed -S base-devel cmake git pkgconf
 </code></pre>
-<h4 id="debian-derivatives">Debian, Derivatives</h4>
+<h4 id="debian-derivatives">Debian, Derivatives<a class="headerlink" href="#debian-derivatives" title="Permanent link">#</a></h4>
 <pre><code>apt install build-essential cmake git
 </code></pre>
-<h4 id="fedora">Fedora</h4>
+<h4 id="fedora">Fedora<a class="headerlink" href="#fedora" title="Permanent link">#</a></h4>
 <pre><code>dnf group install c-development
 dnf install cmake git
 </code></pre>
-<h4 id="opensuse">openSUSE</h4>
+<h4 id="opensuse">openSUSE<a class="headerlink" href="#opensuse" title="Permanent link">#</a></h4>
 <pre><code>zypper install -t pattern devel_basis
 zypper install cmake git
 </code></pre>
-<h3 id="qt">Qt</h3>
+<h3 id="qt">Qt<a class="headerlink" href="#qt" title="Permanent link">#</a></h3>
 <p>Qt version ≥6.6 is required now. Compiling Qt from its sources isn't exactly a trivial task and not within the scope of this document. <br />
 So if you need to compile Qt you may want to look into the various sources addressing this topic (and optionally tell us about your experience).   </p>
-<h4 id="arch-linux_1">Arch Linux</h4>
+<h4 id="arch-linux_1">Arch Linux<a class="headerlink" href="#arch-linux_1" title="Permanent link">#</a></h4>
 <pre><code>pacman --needed -S qt6-base qt6-svg qt6-tools 
 </code></pre>
-<h4 id="debian-derivatives_1">Debian, Derivatives</h4>
+<h4 id="debian-derivatives_1">Debian, Derivatives<a class="headerlink" href="#debian-derivatives_1" title="Permanent link">#</a></h4>
 <pre><code>apt install qt6-base-private-dev libqt6svg6-dev qt6-tools-dev qt6-tools-dev-tools libpolkit-qt6-1-dev qt6-wayland-private-dev
 </code></pre>
-<h4 id="fedora_1">Fedora</h4>
+<h4 id="fedora_1">Fedora<a class="headerlink" href="#fedora_1" title="Permanent link">#</a></h4>
 <pre><code>dnf install qt6-qtbase-devel qt6-qtsvg-devel qt6-qttools-devel
 </code></pre>
-<h4 id="opensuse_1">openSUSE</h4>
+<h4 id="opensuse_1">openSUSE<a class="headerlink" href="#opensuse_1" title="Permanent link">#</a></h4>
 <pre><code>zypper install libqt6-qtbase-private-headers-devel libqt6-qtsvg-devel libqt6-qttools-devel qt6-waylandclient-private-devel
 </code></pre>
-<h3 id="qt-extensions-developed-by-kde-team-frameworks-kscreen-layer-shell-qt">Qt extensions developed by KDE team (Frameworks, KScreen, Layer-shell-qt)</h3>
-<h4 id="arch-linux_2">Arch Linux</h4>
+<h3 id="qt-extensions-developed-by-kde-team-frameworks-kscreen-layer-shell-qt">Qt extensions developed by KDE team (Frameworks, KScreen, Layer-shell-qt)<a class="headerlink" href="#qt-extensions-developed-by-kde-team-frameworks-kscreen-layer-shell-qt" title="Permanent link">#</a></h3>
+<h4 id="arch-linux_2">Arch Linux<a class="headerlink" href="#arch-linux_2" title="Permanent link">#</a></h4>
 <pre><code>pacman --needed -S kguiaddons libkscreen kidletime kwindowsystem solid layer-shell-qt
 </code></pre>
-<h4 id="debian-derivatives_2">Debian, Derivatives</h4>
+<h4 id="debian-derivatives_2">Debian, Derivatives<a class="headerlink" href="#debian-derivatives_2" title="Permanent link">#</a></h4>
 <pre><code>apt-get install libkf6guiaddons-dev libkf6idletime-dev libkf6screen-dev libkf6windowsystem-dev libkf6solid-dev liblayershellqtinterface-dev
 </code></pre>
-<h4 id="fedora_2">Fedora</h4>
+<h4 id="fedora_2">Fedora<a class="headerlink" href="#fedora_2" title="Permanent link">#</a></h4>
 <pre><code>dnf install kf6-kguiaddons-devel libkscreen-qt6-devel kf6-kidletime-devel kf6-kwindowsystem-devel kf6-solid-devel layer-shell-qt-devel
 </code></pre>
-<h4 id="opensuse_2">openSUSE</h4>
+<h4 id="opensuse_2">openSUSE<a class="headerlink" href="#opensuse_2" title="Permanent link">#</a></h4>
 <pre><code>zypper install kguiaddons-devel libkscreen2-devel kidletime-devel kwindowsystem-devel solid-devel layer-shell-qt
 </code></pre>
-<h3 id="miscellaneous">Miscellaneous</h3>
-<h4 id="arch-linux_3">Arch Linux</h4>
+<h3 id="miscellaneous">Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permanent link">#</a></h3>
+<h4 id="arch-linux_3">Arch Linux<a class="headerlink" href="#arch-linux_3" title="Permanent link">#</a></h4>
 <pre><code>pacman --needed -S bash libstatgrab alsa-lib libpulse lm_sensors libconfig muparser upower polkit-qt6 sudo xorg-xmessage libxss libxcursor libxcomposite libxcb libxkbcommon-x11  libfm menu-cache gtk-update-icon-cache hicolor-icon-theme xdg-utils xdg-user-dirs oxygen-icons openbox libxslt
 </code></pre>
-<h4 id="debian-derivatives-ubuntu-see-below">Debian, Derivatives (Ubuntu see below)</h4>
+<h4 id="debian-derivatives-ubuntu-see-below">Debian, Derivatives (Ubuntu see below)<a class="headerlink" href="#debian-derivatives-ubuntu-see-below" title="Permanent link">#</a></h4>
 <pre><code>apt install bash gtk-update-icon-cache hicolor-icon-theme libasound2-dev libconfig-dev libdbusmenu-qt5-dev libexif-dev libfm-dev libjson-glib-dev libmenu-cache-dev libmuparser-dev libpolkit-agent-1-dev  libpulse-dev libsensors-dev libstatgrab-dev libudev-dev libupower-glib-dev libx11-xcb-dev libxcb-composite0-dev libxcb-damage0-dev libxcb-dpms0-dev libxcb-image0-dev libxcb-randr0-dev libxcb-screensaver0-dev libxcb-util0-dev libxcomposite-dev libxcursor-dev libxdamage-dev libxi-dev libxkbcommon-x11-dev libxss-dev libxtst-dev openbox-dev oxygen-icon-theme sudo x11-utils xdg-user-dirs xdg-utils xserver-xorg-input-libinput-dev libproc2-dev
 </code></pre>
-<h4 id="ubuntu">Ubuntu</h4>
+<h4 id="ubuntu">Ubuntu<a class="headerlink" href="#ubuntu" title="Permanent link">#</a></h4>
 <p>Same as Debian but replace <code>gtk-update-icon-cache</code> with <code>libgtk2.0-bin</code>.</p>
-<h4 id="fedora_3">Fedora</h4>
+<h4 id="fedora_3">Fedora<a class="headerlink" href="#fedora_3" title="Permanent link">#</a></h4>
 <pre><code>dnf install systemd-devel bash libstatgrab-devel alsa-lib-devel pulseaudio-libs-devel lm_sensors-devel libconfig-devel muParser-devel upower-devel polkit-devel polkit-qt5-1-devel sudo libexif-devel xorg-x11-apps libSM-devel libXScrnSaver-devel libXcursor-devel libXcomposite-devel libxcb-devel xcb-util-devel libxkbcommon-x11-devel dbusmenu-qt5-devel libfm-devel menu-cache-devel gtk-update-icon-cache hicolor-icon-theme xdg-utils xdg-user-dirs oxygen-icon-theme openbox openbox-devel libxslt-devel
 </code></pre>
-<h4 id="opensuse_3">openSUSE</h4>
+<h4 id="opensuse_3">openSUSE<a class="headerlink" href="#opensuse_3" title="Permanent link">#</a></h4>
 <pre><code>zypper install bash libstatgrab-devel alsa-devel libpulse-devel libsensors4-devel libconfig-devel muparser-devel libupower-glib-devel libpolkit-qt6-1-devel sudo libexif-devel xmessage libXss-devel libXcursor-devel libXcomposite-devel libxcb-devel xcb-util-devel libxkbcommon-x11-devel  libfm-devel menu-cache-devel gtk3-tools hicolor-icon-theme xdg-utils xdg-user-dirs oxygen6-icon-theme openbox-devel libxslt-devel
 </code></pre>
-<h2 id="compiling">Compiling</h2>
-<h3 id="generalbuild-order">General/Build Order</h3>
+<h2 id="compiling">Compiling<a class="headerlink" href="#compiling" title="Permanent link">#</a></h2>
+<h3 id="generalbuild-order">General/Build Order<a class="headerlink" href="#generalbuild-order" title="Permanent link">#</a></h3>
 <p>In order to meet all mutual dependencies the various components have to be compiled in a particular order which is summed up below.</p>
-<h4 id="0-2-packages">0 (2 packages)</h4>
+<h4 id="0-2-packages">0 (2 packages)<a class="headerlink" href="#0-2-packages" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://github.com/lxqt/lxqt-build-tools">lxqt-build-tools</a></li>
 <li><a href="https://github.com/lxqt/libdbusmenu-lxqt">libdbusmenu-lxqt</a></li>
 </ul>
-<h4 id="i-2-packages">I (2 packages)</h4>
+<h4 id="i-2-packages">I (2 packages)<a class="headerlink" href="#i-2-packages" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://github.com/lxqt/libqtxdg">libqtxdg</a></li>
 <li><a href="https://github.com/lxqt/lxqt-menu-data/">lxqt-menu-data</a></li>
 </ul>
-<h4 id="ii-4-packages">II (4 packages)</h4>
+<h4 id="ii-4-packages">II (4 packages)<a class="headerlink" href="#ii-4-packages" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://github.com/lxqt/liblxqt">liblxqt</a></li>
 <li><a href="https://github.com/lxqt/libsysstat">libsysstat</a></li>
 <li><a href="https://github.com/lxqt/qtxdg-tools">qtxdg-tools</a></li>
 <li><a href="https://github.com/lxqt/libfm-qt">libfm-qt</a></li>
 </ul>
-<h4 id="iii-4-packages">III (4 packages)</h4>
+<h4 id="iii-4-packages">III (4 packages)<a class="headerlink" href="#iii-4-packages" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://github.com/lxqt/lxqt-globalkeys">lxqt-globalkeys</a></li>
 <li><a href="https://github.com/lxqt/lxqt-qtplugin">lxqt-qtplugin</a></li>
 <li><a href="https://github.com/lxqt/lxqt-session">lxqt-session</a></li>
 <li><a href="https://github.com/lxqt/qtermwidget">qtermwidget</a></li>
 </ul>
-<h4 id="iv-all-remaining-packages-in-any-order">IV - All remaining packages in any order</h4>
+<h4 id="iv-all-remaining-packages-in-any-order">IV - All remaining packages in any order<a class="headerlink" href="#iv-all-remaining-packages-in-any-order" title="Permanent link">#</a></h4>
 <ul>
 <li><a href="https://github.com/lxqt/lxqt-panel">lxqt-panel</a></li>
 <li><a href="https://github.com/lxqt/pcmanfm-qt">pcmanfm-qt</a></li>
@@ -1667,7 +1669,7 @@ So if you need to compile Qt you may want to look into the various sources addre
 <p>All components are compiled using CMake and GNU make. <br />
 It is strongly advised to do the builds out of source tree. <br />
 At least on some operating systems like Arch Linux and Debian LXQt doesn't seem to start when CMake variable <code>CMAKE_INSTALL_PREFIX</code> which is explained below is <em>not</em> set to <code>/usr</code> which is something we may have to investigate. On the other hand this assignment will hardly ever do harm so it should be safe to recommend setting <code>/usr</code> in general for now.   </p>
-<h3 id="compiling-all-components-individually">Compiling all components individually</h3>
+<h3 id="compiling-all-components-individually">Compiling all components individually<a class="headerlink" href="#compiling-all-components-individually" title="Permanent link">#</a></h3>
 <p>The repositories of all components maintained by the LXQt project as well as nearly all others stated above come with a file <code>README.md</code> providing information how to install the respective component. <br />
 This information applies to compiling the archive files of regular releases as well. <br />
 The names of all components in the synopsis <a href="#compiling">above</a> are links to those repositories you may just follow.   </p>
@@ -1679,7 +1681,7 @@ make
 make install
 </code></pre>
 <p>Directory <code>build</code> should be outside the directory of the sources. <code>cmake</code> and <code>make</code> can and should be run by regular users, <code>make install</code> requires root privileges in order to write to the FHS. These can be acquired by <code>sudo</code>. This is depicted in section <a href="#scripts-to-build-in-one-step">Scripts to build in one step</a> and mandates an invocation <code>sudo make install</code>. But when all components are compiled on their own its probably more convenient to open an additional root session and invoke <code>make install</code> there.   </p>
-<h3 id="scripts-to-build-in-one-step">Scripts to build in one step</h3>
+<h3 id="scripts-to-build-in-one-step">Scripts to build in one step<a class="headerlink" href="#scripts-to-build-in-one-step" title="Permanent link">#</a></h3>
 <p>Aside from hosting the main issue tracker repository <a href="https://github.com/lxqt/lxqt">lxqt</a> provides some scripts to compile latest checkouts of the Git <code>master</code> development branch of all components in one step. <br />
 By default this repository does not contain any source code. Rather, source code is pulled by Git submodules, see below.   </p>
 <p>Script <code>build_all_autotools_projects.sh</code> is covering all components where code is configured by the autotools, <code>build_all_cmake_projects.sh</code> those where it is configured by CMake, <code>build_all.sh</code> is just sourcing the other two. <br />
@@ -1702,7 +1704,7 @@ Should only be set when the auto-detected default doesn't work as expected.</p>
 <p>So finally we can launch by running</p>
 <pre><code>LXQT_PREFIX=/usr ./build_all_cmake_projects.sh
 </code></pre>
-<h3 id="qt5-support">Qt5 Support</h3>
+<h3 id="qt5-support">Qt5 Support<a class="headerlink" href="#qt5-support" title="Permanent link">#</a></h3>
 <p>The script will build only with Qt6. For styling Qt5-based applications and allowing them to use LXQt file dialog, the following packages are needed, usually provided by your package manager:</p>
 <ul>
 <li><a href="https://github.com/lxqt/libqtxdg/releases/tag/3.12.0">libqtxdg 3.12.0</a></li>
