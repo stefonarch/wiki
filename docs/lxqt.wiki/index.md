@@ -1,23 +1,15 @@
 ![LXQt](https://github.com/user-attachments/assets/d91fb43d-7ddb-4314-8298-0bc24fcb8c2a)
 # Welcome to the LXQt wiki
 
-This is the wiki of [the LXQt project](https://lxqt-project.org)
+This is the wiki of the [project](https://lxqt-project.org), a free and open source lightweight [desktop environment](https://en.wikipedia.org/wiki/Desktop_environment).
 
-## Introduction
-LXQt is a free and open source lightweight [desktop environment](https://en.wikipedia.org/wiki/Desktop_environment).
+It will not get in your way. It will not hang or slow down your system. It is focused
+ on being a classic desktop but with a modern look and feel.
 
-### Installation
-* [Precompiled binary packages](Binary-packages.md) are provided by all major Linux and BSD distributions.  
-* [Instructions on how to compile](Building-from-source.md) from the sources.  
+* Modular components
+* Powerful file manager
+* Customize appearance everywhere
+* Panel(s) with many plugins and settings
+* Window Manager agnostic (X11)
+* Choice of 7 Wayland compositors
 
-### Configuration
-* [The concepts of the configuration](https://github.com/lxqt/lxqt/wiki/General).  
-
-### Development
-* [Contribute code](Contributing-code.md).
-* [Report bugs](Reporting-bugs.md)
-* [Contribute to translation](Translation.md).
-
-
-
-<a rel="me" href="https://mastodon.social/@LXQt"/>
