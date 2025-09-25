@@ -13,3 +13,5 @@ It will not get in your way. It will not hang or slow down your system. It is fo
 * Window Manager agnostic (X11)
 * Choice of 7 Wayland compositors
 
+![Desktop Screenshot](https://lxqt-project.org/images/screenshots/kwin_wayland.png)
+

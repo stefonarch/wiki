@@ -1,7 +1,8 @@
 site_name: LXQt Wiki
 docs_dir: lxqt.wiki
 site_url: https://stefonarch.github.io/wiki/
-repo_url: https://github.com/stefonarch/wiki
+repo_url: https://github.com/lxqt/
+edit_uri: edit/main/docs/wiki/
 theme:
   name: material
   locale: en
