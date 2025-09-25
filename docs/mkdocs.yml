@@ -40,6 +40,7 @@ plugins:
         - "Infrastructure-Fellows.md"
         - "TODO-for-Wayland.md"
         - "_Sidebar.md"
+        - "How-To-Release-A-New-Version-of-LXQt.md"
       regex:
 #        - '.*\.(tmp|bin|tar)$'
 extra_css:
@@ -87,6 +88,4 @@ nav:
   - Maintaining-a-good-new-dev-experience.md
   - History.md
   - Contact.md
-
-
 
