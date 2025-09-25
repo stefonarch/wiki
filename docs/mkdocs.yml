@@ -1,0 +1,89 @@
+site_name: LXQt Wiki
+docs_dir: lxqt.wiki
+site_url: https://stefonarch.github.io/wiki/
+repo_url: https://github.com/stefonarch/wiki
+theme:
+  name: material
+  locale: en
+  color_mode: light
+  user_color_mode_toggle: true
+ # custom_dir: my_theme_customizations/
+ # static_templates:
+#    - sitemap.html
+  include_sidebar: false
+  logo: _assets/lxqt.svg
+  favicon: _assets/favicon.png
+  palette:
+    - media: "(prefers-color-scheme)"
+      primary: custom
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: custom
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: custom
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - search:
+  - exclude:
+      glob:
+        - "Config*.md"
+        - "Infrastructure-Fellows.md"
+        - "TODO-for-Wayland.md"
+      regex:
+#        - '.*\.(tmp|bin|tar)$'
+
+# It is IMPERATIVE to leave this property to the end without anything after it.
+# This is because the build file will delete everything after this line and
+# replace it with newly generated data.
+validation:
+  nav:
+    omitted_files: warn
+    not_found: warn
+    absolute_links: relative_to_docs
+  links:
+    not_found: warn
+    anchors: warn
+    absolute_links: relative_to_docs
+    unrecognized_links: warn
+
+not_in_nav:
+    How-To-Release-A-New-Version-of-LXQt.md
+    Infrastructure-Fellows.md
+    Maintaining-a-good-new-dev-experience.md
+    TODO-for-Wayland.md
+    _Footer.md
+    _Sidebar.md
+
+nav:
+- Installation:
+  - Building from Source: Building-from-source.md
+  - Binary-packages.md
+- Usage:
+  - Launch Sessions: Launching-LXQt-sessions.md
+  - Window Managers: Window-managers-(X11).md
+  - Wayland Settings: Wayland-Session.md
+  - Screensaver/Locker: Screensaver-and-Screen-Locker.md
+  - Theming.md
+  - Creating Themes: Creating-LXQt-Themes.md
+  - Locale Configuration: SettingLocale.md
+  - Miscellaneous: Miscellaneous.md
+  - Third-party Apps: Third-party-apps.md
+- Development:
+  - Translation.md
+  - Reporting Bugs: Reporting-bugs.md
+  - Contributing Code: Contributing-code.md
+  - Maintaining-a-good-new-dev-experience.md
+  - History.md
+  - Contact.md
+
+
+
