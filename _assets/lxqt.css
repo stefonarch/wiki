@@ -7,3 +7,7 @@
 .md-nav__link--active {
   font-weight: bold;
 }
+.md-header {
+  color: #fff;
+  background-color: #013f5b;
+}

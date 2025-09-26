@@ -699,6 +699,29 @@
   
   
     <li class="md-nav__item">
+      <a href="https://github.com/lxqt/pcmanfm-qt/wiki" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    PCManFM-Qt Wiki
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../Screensaver-and-Screen-Locker/" class="md-nav__link">
         
   
@@ -1380,7 +1403,7 @@ preferred_backend=labwc:wlroots, niri:wlroots, xyz:my_own_backend
 </code></pre>
 <p>Also, a desktop file can be made for any executable file, and its full path can be used in a command like above. But, for a desktop file inside <code>$XDG_DATA_DIRS/applications/</code>, the file name is enough.</p>
 <h3 id="global-scaling">Global Scaling<a class="headerlink" href="#global-scaling" title="Permanent link">#</a></h3>
-<p><em>The global screen scaling of "LXQt Session Settings" is only for X11 and should not be used on Wayland.</em> Wayland supports per-monitor scaling, and best results can be achieved in the settings of the compositor, if existing.
+<p><em>The global screen scaling of "LXQt Session Settings" is only for X11 and should not be used on Wayland.</em> Wayland supports per-monitor scaling, and best results can be achieved in the settings of the compositor, if existing. 
 Examples:</p>
 <p>Hyprland: <code>monitor=,preferred,auto,1.2</code></p>
 <p>Sway: <code>Output eDP-1 scale 1.2</code></p>
@@ -1437,7 +1460,7 @@ Examples:</p>
 <pre><code>monitorOffCommand_wayland=niri msg action power-off-monitors
 </code></pre>
 <ul>
-<li>Hyprland</li>
+<li>Hyprland </li>
 </ul>
 <pre><code>monitorOffCommand_wayland=hyprctl dispatch dpms off
 </code></pre>
@@ -1498,35 +1521,33 @@ SessionLogFile=/tmp/wayland-session.log
 CompositorCommand=labwc
 </code></pre>
 <p>SDDM uses <code>/var/lib/sddm/</code> as home directory where the compositor should be configured, otherwise default settings will be applied:</p>
-<p><code>/var/lib/sddm/.config/labwc/rc.xml</code></p>
-<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
-&lt;labwc_config&gt;
-
-&lt;keyboard&gt;
-    &lt;keybind key=&quot;A-Space&quot;&gt;
-      &lt;action name=&quot;ShowMenu&quot; menu=&quot;client-menu&quot; /&gt;
-    &lt;/keybind&gt;
-    &lt;keybind key=&quot;A-k&quot;&gt;
-      &lt;action name=&quot;Execute&quot;&gt;
-        &lt;command&gt;wvkbd-mobintl&lt;/command&gt;
-      &lt;/action&gt;
-    &lt;/keybind&gt;
-&lt;/keyboard&gt;
-
-  &lt;mouse&gt;
-    &lt;default /&gt;
-  &lt;/mouse&gt;
-  &lt;libinput&gt;
-    &lt;device category=&quot;default&quot;&gt;
-      &lt;naturalScroll&gt;no&lt;/naturalScroll&gt;
-      &lt;pointerSpeed&gt;0.8&lt;/pointerSpeed&gt;
-      &lt;accelProfile&gt;adaptive&lt;/accelProfile&gt;
-      &lt;tap&gt;yes&lt;/tap&gt;
-      &lt;disableWhileTyping&gt;yes&lt;/disableWhileTyping&gt;
-    &lt;/device&gt;
-  &lt;/libinput&gt;
-&lt;/labwc_config&gt;
-</code></pre>
+<p><code>/var/lib/sddm/.config/labwc/rc.xml</code>
+```</p>
+<?xml version="1.0"?>
+<p><labwc_config></p>
+<p><keyboard>
+    <keybind key="A-Space">
+      <action name="ShowMenu" menu="client-menu" />
+    </keybind>
+    <keybind key="A-k">
+      <action name="Execute">
+        <command>wvkbd-mobintl</command>
+      </action>
+    </keybind>
+</keyboard></p>
+<p><mouse>
+    <default />
+  </mouse>
+  <libinput>
+    <device category="default">
+      <naturalScroll>no</naturalScroll>
+      <pointerSpeed>0.8</pointerSpeed>
+      <accelProfile>adaptive</accelProfile>
+      <tap>yes</tap>
+      <disableWhileTyping>yes</disableWhileTyping>
+    </device>
+  </libinput>
+</labwc_config></p>
 
 
 
