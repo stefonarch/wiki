@@ -4,8 +4,9 @@ Basic knowledge of the respective package management tools is required and not w
 
 For a list of LXQt versions on various distributions, please check https://repology.org/project/lxqt-session/versions.
 
-***If your distribution has an older package version, please do not report bugs on Github, but rather on their respective bug trackers.
-If you want the latest LXQt on such a distribution you can build it using the instructions [here](https://github.com/lxqt/lxqt/wiki/Building-from-source).***
+>[!NOTE]
+If your distribution has an older package version, please do not report bugs on Github, but rather on their respective bug trackers.
+If you want the latest LXQt on such a distribution you can build it using the instructions [here](Building-from-source).
 
 ## Arch Linux
 

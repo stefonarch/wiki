@@ -18,7 +18,7 @@ For the supported compositors, minimal default settings based on their default s
 | Niri       | Tile    | -  | yes         | -          | kdl          | -        |---  |
 | River      | Tile  | -    | -           | -          | script       | -        | Taskbar cannot activate windows on other tags|
 | Sway       | Tile   | -                | -  | -     | custom/sh    | -        |[runner broken](https://github.com/swaywm/sway/issues/8100) |
-| Wayfire    | Stack  | yes | yes        | -          |  ini         | yes      |       |  
+| Wayfire    | Stack  | yes | yes        | -          |  ini         | yes      |       |                                                     
 
 
 Consider disabling the shortcut for exiting the compositor to avoid accidental killing of the session.
@@ -76,7 +76,7 @@ Also, a desktop file can be made for any executable file, and its full path can 
 
 ### Global Scaling
 
-*The global screen scaling of "LXQt Session Settings" is only for X11 and should not be used on Wayland.* Wayland supports per-monitor scaling, and best results can be achieved in the settings of the compositor, if existing.
+*The global screen scaling of "LXQt Session Settings" is only for X11 and should not be used on Wayland.* Wayland supports per-monitor scaling, and best results can be achieved in the settings of the compositor, if existing. 
 Examples:
 
 Hyprland: `monitor=,preferred,auto,1.2`
@@ -145,7 +145,7 @@ monitorOffCommand_wayland=kscreen-doctor --dpms off
 ```
 monitorOffCommand_wayland=niri msg action power-off-monitors
 ```
-* Hyprland
+* Hyprland 
 
 
 ```
@@ -259,4 +259,6 @@ SDDM uses `/var/lib/sddm/` as home directory where the compositor should be conf
     </device>
   </libinput>
 </labwc_config>
-```
+
+
+
