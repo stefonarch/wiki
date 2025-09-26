@@ -1,4 +1,4 @@
-name: ci
+name: material
 on:
   push:
     branches:

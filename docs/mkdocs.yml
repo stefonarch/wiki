@@ -45,9 +45,7 @@ plugins:
 #        - '.*\.(tmp|bin|tar)$'
 extra_css:
   - _assets/lxqt.css
-# It is IMPERATIVE to leave this property to the end without anything after it.
-# This is because the build file will delete everything after this line and
-# replace it with newly generated data.
+
 validation:
   nav:
     omitted_files: warn
@@ -64,7 +62,6 @@ not_in_nav:
     Infrastructure-Fellows.md
     Maintaining-a-good-new-dev-experience.md
     TODO-for-Wayland.md
-    _Footer.md
     _Sidebar.md
 
 nav:
