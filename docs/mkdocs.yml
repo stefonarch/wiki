@@ -79,7 +79,7 @@ nav:
   - Window Managers: Window-managers-(X11).md
   - Wayland Settings: Wayland-Session.md
   - PCMmanFM-Qt:
-    - Overview: Home.md
+    - Overview: Pcmanfm-qt.md
     - Custom Actions: custom_actions.md
   - Screensaver/Locker: Screensaver-and-Screen-Locker.md
   - Theming.md

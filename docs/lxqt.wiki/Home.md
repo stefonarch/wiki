@@ -1,48 +1,8 @@
 
-This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
-
 - [Custom Actions](#custom-actions)
 For example, if you have a folder containing images, you could check the above-mentioned menu item for it and click the "Thumbnail View" toolbar button. Then, that folder will always show big thumbnails of images (their size can be changed in Preferences → Display → Size of thumbnails), while other folders will have the default view mode.
 
-Under LXQt, the DE setting can be changed in `Keyboard and Mouse Settings → Mouse → Wheel scroll lines`.
 
-In the detailed list mode, the scroll speed is always that of the DE. In the compact mode, at most one column is scrolled at a time.
-
-If you want the minimum speed, press `Shift` while turning the mouse wheel inside the view.
-
-Because of a Qt bug in updating views with huge numbers of items, an option has been added for disabling smooth scrolling (Preferences → Display → Disable smooth  scrolling).
-
-### Tab DND
-
-Tabs can be reordered by the mouse. In Addition, *if the main view is not split*, they can be detached or moved from one window to another.
-
-When there is more than one tab, to detach a tab, drag and drop it outside all windows of PCManFM-Qt. Then, a new window will be created for the dropped tab.
-
-To move a tab to another window, drag and drop it into that window. If the source window has only one tab, it will disappear after the tab is moved.
-
-### Permanently Deleting Files
-
-If GVFS Trash support is installed, to delete a file permanently — in contrast to moving it into Trash — use `Shift + Delete`.
-
-If you do not want Trash at all, you could uncheck Preferences → Behavior → File operations → Move deleted files to "trash bin" instead of erasing from disk.
-
-### Forward/Backward History
-
-Each tab of PCManFM-Qt has a forward/backward history. To access and use it, right click the "Go Back" and "Go Forward" buttons on the tool bar. You can move through the history by clicking the items of the right click menu.
-
-### Filter Bar
-
-If `View → Toolbars → Permanent filter bar` is checked, you should type inside the filter bar to filter files/folders. That may not be comfortable because you need to focus the filter bar for filtering and refocus the main view after filtering, e.g., by clicking inside them or using shortcuts.
-
-To filter files/folders more easily, *uncheck* the above-mentioned item and type *inside the main view*. Once you type the first letter, the filter bar appears and filtering starts, while the main view keeps the focus.
-
-To remove filtering, just press `Escape` or click the Clear icon of the filter bar (`Ctrl + K` can also be used). If you had selected some files before removing the filter, your selection will be preserved.
-
-Let us call this a "transient filter bar". For the sake of consistency, if the filter bar is transient and *if there is no selection*, the first `Space` that is typed inside the view will only select the *current item*, without starting filtering. The current item may be marked by widget styles in different ways, e.g. it may have a dotted rectangle around its name or a faded line below it. There can only be one current item inside a focused widget. In Qt, the current item is selected by `Space` and deselected by `Ctrl + Space` everywhere; hence making an exception for the first `Space`.
-
-For pasting text into the transient filter bar, press `Shift + Insert` inside the view. Of course, you could also show and focus the filter bar with `Ctrl + I` but `Shift + Insert` guarantees that the focus remains on the view.
-
-*NOTE:* Pressing and holding `Backspace` is not a good way of clearing the transient filter bar because the selected file may change. Pressing `Escape` is always the best and easiest way.
 
 ### Bulk Renaming
 
