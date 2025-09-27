@@ -1,4 +1,5 @@
 # Structure of an LXQt Theme
+
 ## Theme Stylesheets (*.qss)
 Themes for LXQt consist of a named directory under `/usr/share/lxqt/themes/` (global) or `$HOME/.local/share/lxqt/themes/` (per-user). Inside these folders are:
 
@@ -72,8 +73,9 @@ While it is not mandatory to theme any specific widget or plugin in any specific
 > }
 > ```
 
-# The LXQt Panel (`$PATH/lxqt-panel`)
+## The LXQt Panel (`$PATH/lxqt-panel`)
 * The LXQt panel consists of a base executable which draws a horizontal (or vertical) area onto the screen, optionally and by default reserving space for itself so as not to be covered by application windows. Everything we normally associate with a panel - application menu, taskbar, system tray, clock, and so forth - is a plugin, a small self-contained applet which is drawn in a specific position on the panel and which may be interacted with via mouse, keyboard, touch, etc.
+
 ## List of widgets themeable in `lxqt-panel.qss`
 
 ## The Panel Itself
@@ -119,30 +121,29 @@ Most window managers have the ability to implement virtual desktops, and this wi
 * `#DesktopSwitch QToolButton` works exactly the same as its taskbar variant above, and it is possible and encouraged to declare them both together if you wish your theme to draw them identically; see <a href=https://github.com/lxqt/lxqt/wiki/Creating-LXQt-Themes/#theming-lxqt-applications>here</a> for how.
 
 ## The Quicklaunch Toolbar
+
 ### #QuickLaunch
 The Quicklaunch plugin provides a space for the user to drag-and-drop icons from the main menu, enabling simple one-click access to them.
 * `#QuickLaunch QToolButton` will theme the individual app buttons that have been dragged-and-dropped into the launcher dock.
 
 ### #QuickLaunchPlaceHolder 
+
 * `#QuickLaunchPlaceHolder` themes the "drop application icons here" area and caption of a default (empty) Quicklaunch toolbar.
 
 ## The World Clock
+
 ### #WorldClock (deprecates #Clock)
 The LXQt WorldClock plugin is able to display time, date, and timezone in a fully-localizable, standards-compliant manner. It also displays a calender when clicked, about which see below.
 * `#WorldClock` themes the area of the panel reserved for the clock widget as a whole.
 * `#WorldClockContent` specifically themes the caption of the clock widget.
 
 ## The Calendar
+
 ### QCalendarWidget
 * **TODO: Please document the many, many, _many_ options for the QCalendarWidget plugin here.** The <a href=https://github.com/lxqt/lxqt-themes/blob/master/themes/kvantum/lxqt-panel.qss>Kvantum theme</a> may be a good place to look. 
 
+## The LXQt Runner  (`$PATH/lxqt-runner`)
 
-
-
-
-
-
-# The LXQt Runner  (`$PATH/lxqt-runner`)
 * The LXQt Runner is a self-contained dropdown widget, similar to KDE Plasma's `krunner`, which accepts text input and updates search results in real time. It is accessible by pressing `Alt + F2` (by default) in a running LXQt session.
 ## List of widgets themeable in `lxqt-runner.qss`
 ### #panel

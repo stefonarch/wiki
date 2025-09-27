@@ -3,7 +3,6 @@
 
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
-- [Custom Actions](#custom-actions)
 
 ### GVFS
 
