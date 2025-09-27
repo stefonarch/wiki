@@ -1,28 +1,8 @@
-## General
 
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
 - [Custom Actions](#custom-actions)
 For example, if you have a folder containing images, you could check the above-mentioned menu item for it and click the "Thumbnail View" toolbar button. Then, that folder will always show big thumbnails of images (their size can be changed in Preferences → Display → Size of thumbnails), while other folders will have the default view mode.
-
-If you want to customize a folder *and* all its sub-folders, you should check "Preserve Settings Recursively from Here" in the same menu instead. With that item checked, any change in view settings of the folder is preserved for its sub-folders too. If you change the view settings of a sub-folder *separately*, the changes will be temporary because it should take its permanent settings from the parent folder.
-
-The above-mentioned menu may also have other items, whose functioning you could easily guess.
-
-The view mode of a customized folder is reflected by its tab icon. The existence of a tab icon is a sign of view customization.
-
-### Mouse Wheel Scrolling
-
-Wheel scrolling over the scroll-bar follows Qt's default behavior. But when the cursor is inside the main view, the behavior depends on the view mode, as explained here.
-
-In the icon and thumbnail views, which support large icons, Qt's default scroll jumps can make it difficult to keep track of items. As a workaround and for user convenience, the scrolling is smooth by default and its speed depends on the icon size. The following table shows the speed inside icon and thumbnail views.
-
-| Icon Size        | Scroll Speed |
-|------------------|--------------|
-| 256              | half the row |
-| ≥ 96 and < 256   | one row      |
-| ≥ 64 and < 96    | two rows     |
-| < 64             | DE setting   |
 
 Under LXQt, the DE setting can be changed in `Keyboard and Mouse Settings → Mouse → Wheel scroll lines`.
 
