@@ -1,8 +1,9 @@
 #!/bin/bash
-git submodule update --recursive --remote
-cp lxqt.wiki/*.md docs/lxqt.wiki
-sed -i '7,25d' pcmanfm-qt.wiki/Home.md #removal of the table
-sed -i '1d' pcmanfm-qt.wiki/Home.md
-cp pcmanfm-qt.wiki/*.md docs/lxqt.wiki
-cp pcmanfm-qt.wiki/Home.md docs/lxqt.wiki/Pcmanfm-qt.md
-
+git clone https://github.com/lxqt/lxqt.wiki.git tmp/lxqt
+git clone https://github.com/lxqt/pcmanfm-qt.wiki.git tmp/pcmanfm-qt
+mv -v tmp/lxqt/*.md docs/lxqt.wiki
+sed -i '7,26d' tmp/pcmanfm-qt/Home.md #removal of the table
+sed -i '1d' tmp/pcmanfm-qt/Home.md
+mv -v tmp/pcmanfm-qt/Home.md docs/lxqt.wiki/Pcmanfm-qt.md
+mv -v tmp/pcmanfm-qt/*.md docs/lxqt.wiki
+rm -rf tmp/*
