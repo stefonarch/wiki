@@ -66,10 +66,8 @@ validation:
 not_in_nav:
     How-To-Release-A-New-Version-of-LXQt.md
     Infrastructure-Fellows.md
-    Maintaining-a-good-new-dev-experience.md
     TODO-for-Wayland.md
     _Sidebar.md
-
 nav:
 - Installation:
   - Binary Packages: Binary-packages.md
