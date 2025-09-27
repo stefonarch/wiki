@@ -1,0 +1,4 @@
+#!/bin/bash
+git submodule update
+cp lxqt.wiki/*.md docs/lxqt.wiki
+cp pcmanfm-qt.wiki/*.md docs/lxqt.wiki
