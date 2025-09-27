@@ -4,7 +4,6 @@ site_url: https://stefonarch.github.io/wiki/
 repo_url: https://github.com/lxqt/
 edit_uri: https://github.com/stefonarch/wiki/tree/main/docs/lxqt.wiki/
 use_directory_urls: false
-#edit_uri: lxqt/wiki/
 theme:
   name: material
   locale: en
