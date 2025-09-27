@@ -1,12 +1,12 @@
-Pre-compiled binary packages are provided by all major Linux and BSD distributions.  
+Pre-compiled binary packages are provided by all major Linux and BSD distributions.   
 
-Basic knowledge of the respective package management tools is required and not within the scope of this wiki. Please refer to the documentation of the distribution you're using.  
+Basic knowledge of the respective package management tools is required and not within the scope of this wiki. Please refer to the documentation of the distribution you're using.   
 
 For a list of LXQt versions on various distributions, please check https://repology.org/project/lxqt-session/versions.
 
 >[!NOTE]
 If your distribution has an older package version, please do not report bugs on Github, but rather on their respective bug trackers.
-If you want the latest LXQt on such a distribution you can build it using the instructions [here](wiki/Building-from-source).
+If you want the latest LXQt on such a distribution you can build it using the instructions [here](Building-from-source).
 
 ## Arch Linux
 
@@ -22,14 +22,14 @@ Nearly identical as Arch Linux.
 
 ### Debian
 
-LXQt is available in Debian's official repositories (LXQt 1.2.0 in Debian 12 "bookworm" and LXQt 2.1.x in Debian 13 "Trixie"). There are metapackages `lxqt-core` providing core features and `lxqt` providing LXQt as a whole plus some additional applications. See https://github.com/lxqt/lxqt/discussions/2712 for LXQt 2.2 in Debian Trixie.
+LXQt is available in Debian's official repositories (LXQt 1.2.0 in Debian 12 "bookworm" and LXQt 2.1.x in Debian 13 "Trixie"). There are metapackages `lxqt-core` providing core features and `lxqt` providing LXQt as a whole plus some additional applications. See https://github.com/lxqt/lxqt/discussions/2712 for LXQt 2.2 in Debian Trixie. 
 
 ### Ubuntu, Derivatives
 
 #### Official repositories
 
 LXQt is available in the official repositories as of Ubuntu 18.04 "Bionic Beaver" and later.
-The metapackages are the same as in Debian.  
+The metapackages are the same as in Debian.   
 
 #### PPAs
 
@@ -52,10 +52,10 @@ Additionally, "live ebuilds" using git commits can be found from the Qt overlay.
 
 ## Mageia
 
-A meta-package to install LXQt on Mageia's latest release can be found [here](http://mageia.madb.org/package/show/application/0/name/task-lxqt).  
+A meta-package to install LXQt on Mageia's latest release can be found [here](http://mageia.madb.org/package/show/application/0/name/task-lxqt).    
 
 ## openSUSE
 
-Stable versions are maintained in `X11:LXQt` and included in openSUSE Leap and Tumbleweed. LXQt can be installed via the LXQt pattern: `zypper in -t pattern lxqt`, or via clicking on the pattern in YaST Software or by installing every component individually. More information can be found in the [openSUSE Wiki](https://en.opensuse.org/LXQT).  
-Git snapshots are available in `X11:LXQt:git`.  
+Stable versions are maintained in `X11:LXQt` and included in openSUSE Leap and Tumbleweed. LXQt can be installed via the LXQt pattern: `zypper in -t pattern lxqt`, or via clicking on the pattern in YaST Software or by installing every component individually. More information can be found in the [openSUSE Wiki](https://en.opensuse.org/LXQT).   
+Git snapshots are available in `X11:LXQt:git`.   
 

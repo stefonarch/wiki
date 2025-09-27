@@ -1,47 +1,8 @@
-# PCManFM-Qt
-
 ## General
 
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
-Table of Contents
-=================
-- [GVFS](#gvfs)
-- [View Modes](#view-modes)
-- [Customizing View Settings](#customizing-view-settings)
-- [Mouse Wheel Scrolling](#mouse-wheel-scrolling)
-- [Tab DND](#tab-dnd)
-- [Permanently Deleting Files](#permanently-deleting-files)
-- [Forward/Backward History](#forwardbackward-history)
-- [Filter Bar](#filter-bar)
-- [Bulk Renaming](#bulk-renaming)
-- [Changing Folder Icons](#changing-folder-icons)
-- [Emblems](#emblems)
-- [Hiding Files/Folders without Renaming Them](#hiding-filesfolders-without-renaming-them)
-- [Thumbnails](#thumbnails)
-- ["Admin Mode" vs. Root Instance](#admin-mode-vs-root-instance)
-- [Trusting Executables](#trusting-executables)
-- [Using Desktop under Wayland](#using-desktop-under-wayland)
 - [Custom Actions](#custom-actions)
-
-### GVFS
-
-GVFS is an important optional dependency of PCManFM-Qt (`libfm-qt`). Although PCManFM-Qt does not depend on it explicitly, it provides important functionalities like Trash support. Its name appears in several places of the current document.
-
-It is highly recommended that you install the GVFS packages that you may need from your distro repository. If you do not know what each GVFS package does, install all of them.
-
-### View Modes
-
-PCManFM-Qt has four view modes: icon view, thumbnail view, compact view, and detailed list view. You can choose the default mode in Preferences → Behavior → Default view mode (it is icon view by default).
-
-In addition, there are four toolbar buttons for changing the mode. They do not change the default mode, but you can use them to switch to another mode temporarily. For example, if the default mode is icon view and you need a detailed list temporarily, you could click the "Detailed List" button on toolbar. Also, see [Customizing View Settings](#customizing-view-settings).
-
-### Customizing View Settings
-
-The item sorting, showing of hidden items and view mode can be changed globally. The item sorting and visibility of hidden items can be changed by using the folder's right-click menu; then subsequent windows will reflect the changes. The view mode can be changed permanently only in Preferences (see [View Modes](#view-modes)).
-
-But each folder can also have customized view settings of its own. To customize a folder, check `View → Customized View Settings → Preserve Settings for This Folder` or, more easily, right click the tab and check the same menu item. After that, any change in the view settings of that folder — including the view mode, that can be changed by using view toolbar buttons — will be preserved for it, without affecting other folders.
-
 For example, if you have a folder containing images, you could check the above-mentioned menu item for it and click the "Thumbnail View" toolbar button. Then, that folder will always show big thumbnails of images (their size can be changed in Preferences → Display → Size of thumbnails), while other folders will have the default view mode.
 
 If you want to customize a folder *and* all its sub-folders, you should check "Preserve Settings Recursively from Here" in the same menu instead. With that item checked, any change in view settings of the folder is preserved for its sub-folders too. If you change the view settings of a sub-folder *separately*, the changes will be temporary because it should take its permanent settings from the parent folder.
@@ -211,6 +172,18 @@ There is a safer way of trusting executables: you could right click them and che
 
 Like some other important properties, trusting executables requires GVFS. Without GVFS, the trust state will be lost in the next session.
 
+### Profiles
+
+PCManFM-Qt has a `--profile` option, which can be used for having different configurations when needed. For example, this command starts the desktop module with the profile `myProfile`:
+
+```sh
+pcmanfm-qt --desktop --profile=myProfile
+```
+
+Users usually do not need to set it. It is set to `lxqt` when the desktop module is started by the LXQt Session and is `default` when omitted.
+
+When PCManFM-Qt is started with a profile `xyz`, it (creates and) uses the configuration files inside the folder `~/pcmanfm-qt/xyz/`. In this way, the application can be started with different configurations under different desktop environments. Please note that only the LXQt Session sets it automatically. If you need a specific profile for another DE, you should set it explicitly, e.g., in front of `Exec=` in a desktop entry that you may make for that DE.
+
 ### Using Desktop under Wayland
 
 Since its version 2.0.0, PCManFM-Qt's desktop is fully functional under Wayland compositors which implement the `wl-layer-shell` protocol, e.g., KWin and `wlroots`-based compositors like LabWC, Wayfire,…
@@ -221,7 +194,7 @@ Unfortunately, Qt cannot distinguish between the desktop geometry and the *avail
 
 ***
 
-However, if you set up your Wayland desktop, your X11 desktop will also be affected, and conversely. If you switch between X11 and Wayland frequently, you might not want that. Fortunately, PCManFM-Qt has a `--profile` option which can solve this problem inside an LXQt session:
+However, if you set up your Wayland desktop, your X11 desktop will also be affected, and conversely. If you switch between X11 and Wayland frequently, you might not want that. PCManFM-Qt's `--profile` option can solve this problem inside an LXQt session:
 
  1. Make an executable script `lxqt-desktoploader` like this, which uses another profile on Wayland:
 

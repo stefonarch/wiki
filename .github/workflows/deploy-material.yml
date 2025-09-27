@@ -1,4 +1,4 @@
-name: material
+name: deploy-material.yml
 on:
   push:
     branches:
