@@ -8,24 +8,28 @@
       
       
       
-        <link rel="canonical" href="https://stefonarch.github.io/wiki/General/">
+        <link rel="canonical" href="https://stefonarch.github.io/wiki/Screensaver-and-Screen-Locker.html">
       
       
+        <link rel="prev" href="custom_actions.html">
       
       
-      <link rel="icon" href="../_assets/favicon.png">
+        <link rel="next" href="Theming.html">
+      
+      
+      <link rel="icon" href="_assets/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
     
     
       
-        <title>General - LXQt Wiki</title>
+        <title>Screensaver/Locker - LXQt Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.e53b48f4.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.e53b48f4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,9 +48,9 @@
       
     
     
-      <link rel="stylesheet" href="../_assets/lxqt.css">
+      <link rel="stylesheet" href="_assets/lxqt.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -72,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#pcmanfm-qt" class="md-skip">
+        <a href="#wayland" class="md-skip">
           Skip to content
         </a>
       
@@ -88,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="LXQt Wiki" class="md-header__button md-logo" aria-label="LXQt Wiki" data-md-component="logo">
+    <a href="." title="LXQt Wiki" class="md-header__button md-logo" aria-label="LXQt Wiki" data-md-component="logo">
       
-  <img src="../_assets/lxqt.svg" alt="logo">
+  <img src="_assets/lxqt.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -107,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              General
+              Screensaver/Locker
             
           </span>
         </div>
@@ -180,6 +184,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -197,7 +203,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/stefonarch/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -233,16 +239,16 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="LXQt Wiki" class="md-nav__button md-logo" aria-label="LXQt Wiki" data-md-component="logo">
+    <a href="." title="LXQt Wiki" class="md-nav__button md-logo" aria-label="LXQt Wiki" data-md-component="logo">
       
-  <img src="../_assets/lxqt.svg" alt="logo">
+  <img src="_assets/lxqt.svg" alt="logo">
 
     </a>
     LXQt Wiki
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/lxqt/lxqt/" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/stefonarch/" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -300,7 +306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Building-from-source/" class="md-nav__link">
+      <a href="Building-from-source.html" class="md-nav__link">
         
   
   
@@ -323,7 +329,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Binary-packages/" class="md-nav__link">
+      <a href="Binary-packages.html" class="md-nav__link">
         
   
   
@@ -350,18 +356,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
@@ -377,7 +385,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Usage
@@ -391,7 +399,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Launching-LXQt-sessions/" class="md-nav__link">
+      <a href="Launching-LXQt-sessions.html" class="md-nav__link">
         
   
   
@@ -414,7 +422,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Window-managers-%28X11%29/" class="md-nav__link">
+      <a href="Window-managers-%28X11%29.html" class="md-nav__link">
         
   
   
@@ -437,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Wayland-Session/" class="md-nav__link">
+      <a href="Wayland-Session.html" class="md-nav__link">
         
   
   
@@ -459,13 +467,51 @@
   
   
   
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PCMmanFM-Qt
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            PCMmanFM-Qt
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
     <li class="md-nav__item">
-      <a href="https://github.com/lxqt/pcmanfm-qt/wiki" class="md-nav__link">
+      <a href="Home.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    PCManFM-Qt Wiki
+    Overview
     
   </span>
   
@@ -483,7 +529,58 @@
   
   
     <li class="md-nav__item">
-      <a href="../Screensaver-and-Screen-Locker/" class="md-nav__link">
+      <a href="custom_actions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Screensaver/Locker
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Screensaver-and-Screen-Locker.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -494,6 +591,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wayland" class="md-nav__link">
+    <span class="md-ellipsis">
+      Wayland
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xscreensaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      XScreenSaver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-screenlockers-using-xautolock" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Screenlockers using Xautolock
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -506,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Theming/" class="md-nav__link">
+      <a href="Theming.html" class="md-nav__link">
         
   
   
@@ -529,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Creating-LXQt-Themes/" class="md-nav__link">
+      <a href="Creating-LXQt-Themes.html" class="md-nav__link">
         
   
   
@@ -552,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../SettingLocale/" class="md-nav__link">
+      <a href="SettingLocale.html" class="md-nav__link">
         
   
   
@@ -575,7 +732,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Miscellaneous/" class="md-nav__link">
+      <a href="Miscellaneous.html" class="md-nav__link">
         
   
   
@@ -598,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Third-party-apps/" class="md-nav__link">
+      <a href="Third-party-apps.html" class="md-nav__link">
         
   
   
@@ -666,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Translation/" class="md-nav__link">
+      <a href="Translation.html" class="md-nav__link">
         
   
   
@@ -689,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Reporting-bugs/" class="md-nav__link">
+      <a href="Reporting-bugs.html" class="md-nav__link">
         
   
   
@@ -712,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Contributing-code/" class="md-nav__link">
+      <a href="Contributing-code.html" class="md-nav__link">
         
   
   
@@ -735,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Maintaining-a-good-new-dev-experience/" class="md-nav__link">
+      <a href="Maintaining-a-good-new-dev-experience.html" class="md-nav__link">
         
   
   
@@ -758,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../History/" class="md-nav__link">
+      <a href="History.html" class="md-nav__link">
         
   
   
@@ -781,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Contact/" class="md-nav__link">
+      <a href="Contact.html" class="md-nav__link">
         
   
   
@@ -829,56 +986,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pcmanfm-qt" class="md-nav__link">
+  <a href="#wayland" class="md-nav__link">
     <span class="md-ellipsis">
-      PCManFM-Qt
+      Wayland
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#pavucontrol-qt" class="md-nav__link">
+  <a href="#configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Pavucontrol-Qt
+      Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xscreensaver" class="md-nav__link">
+    <span class="md-ellipsis">
+      XScreenSaver
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lximage-qt" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#other-screenlockers-using-xautolock" class="md-nav__link">
     <span class="md-ellipsis">
-      LXImage-Qt
+      Other Screenlockers using Xautolock
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#qterminal" class="md-nav__link">
-    <span class="md-ellipsis">
-      QTerminal
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#lxqt-archiver" class="md-nav__link">
-    <span class="md-ellipsis">
-      LXQt-Archiver
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#screengrab" class="md-nav__link">
-    <span class="md-ellipsis">
-      ScreenGrab
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -898,87 +1043,45 @@
 
 
   
+    <a href="https://github.com/stefonarch/wiki/tree/main/docs/lxqt.wiki/Screensaver-and-Screen-Locker.md" title="Edit this page" class="md-content__button md-icon" rel="edit">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
   
 
 
-  <h1>General</h1>
+  <h1>Screensaver/Locker</h1>
 
-<p>Global configuration files are <code>/etc/xdg/lxqt-qtxdg.conf/</code> and files in <code>/usr/share/lxqt/</code> whereas user-specific configuration files are stored in <code>~/.config/lxqt/</code>, the <a href="https://en.wikipedia.org/wiki/INI_file">INI</a> format is used.   </p>
-<p>The main configuration files are</p>
-<table>
-<thead>
-<tr>
-<th>LXQt Component</th>
-<th>Configuration File</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>lxqt</td>
-<td>lxqt.conf</td>
-</tr>
-<tr>
-<td>panel</td>
-<td>panel.conf</td>
-</tr>
-<tr>
-<td>session</td>
-<td>session.conf</td>
-</tr>
-<tr>
-<td>runner</td>
-<td>lxqt-runner.conf</td>
-</tr>
-<tr>
-<td>globalkeys</td>
-<td>globalkeyshortcuts.conf</td>
-</tr>
-<tr>
-<td>powermanagement</td>
-<td>lxqt-powermanagement.conf</td>
-</tr>
-<tr>
-<td>appearance</td>
-<td>lxqt-config-appearance.conf</td>
-</tr>
-<tr>
-<td>monitor</td>
-<td>lxqt-config-monitor.conf</td>
-</tr>
-<tr>
-<td>locale</td>
-<td>lxqt-config-locale.conf</td>
-</tr>
-<tr>
-<td>filedialog</td>
-<td>filedialog.conf</td>
-</tr>
-<tr>
-<td>notifications</td>
-<td>notifications.conf</td>
-</tr>
-<tr>
-<td>archiver</td>
-<td>archiver.conf</td>
-</tr>
-</tbody>
-</table>
-<h2 id="pcmanfm-qt">PCManFM-Qt<a class="headerlink" href="#pcmanfm-qt" title="Permanent link">#</a></h2>
+<p>LXQt does not provide its own screensaver or screen locker but any arbitrary screensaver/locker can be used.</p>
+<p>In LXQt in order to use the checkbox in <a href="https://github.com/lxqt/lxqt-session#lxqt-session-settings">LXQt Session Settings</a>, lock actions from the leave-menu or lxqt-runner and lock actions  configured in <a href="https://github.com/lxqt/lxqt-powermanagement#translations">lxqt-config-powermanagement</a> a xdg-screensaver compliant screensaver is needed under X11.</p>
+<p>From LXQt 2.1 on a custom screensaver can be added in "Session Settings" for both X11 and Wayland sessions</p>
+<p><code>xdg-screensaver 1.1.3</code> supports the following screensavers:</p>
 <ul>
-<li>User settings are stored in <code>~/.config/pcmanfm-qt/lxqt/</code></li>
-<li>Custom actions can be created in<code>~/.local/share/file-manager/actions/</code></li>
+<li>XScreenSaver</li>
+<li>Xautolock</li>
+<li>Gnome-screensaver</li>
+<li>Mate-screensaver</li>
+<li>Cinnamon-screensaver</li>
 </ul>
-<p>PCManFM-Qt is documented in detail at the <a href="https://github.com/lxqt/pcmanfm-qt/wiki">PCManFM-Qt Wiki</a>. </p>
-<h2 id="pavucontrol-qt">Pavucontrol-Qt<a class="headerlink" href="#pavucontrol-qt" title="Permanent link">#</a></h2>
-<p>User settings are stored in <code>~/.config/pavucontrol-qt/</code></p>
-<h2 id="lximage-qt">LXImage-Qt<a class="headerlink" href="#lximage-qt" title="Permanent link">#</a></h2>
-<p>User settings are stored in <code>~/.config/lximage-qt/</code></p>
-<h2 id="qterminal">QTerminal<a class="headerlink" href="#qterminal" title="Permanent link">#</a></h2>
-<p>User settings are stored in <code>~/.config/qterminal.org/</code></p>
-<h2 id="lxqt-archiver">LXQt-Archiver<a class="headerlink" href="#lxqt-archiver" title="Permanent link">#</a></h2>
-<p>User settings are stored in <code>~/.config/lxqt/archiver.conf</code></p>
-<h2 id="screengrab">ScreenGrab<a class="headerlink" href="#screengrab" title="Permanent link">#</a></h2>
-<p>User settings are stored in <code>~/.config/screengrab/</code></p>
+<p>Note that the latter three will install many GTK+ dependencies.</p>
+<p>A list of available screen-lockers can be found <a href="https://wiki.archlinux.org/title/List_of_applications/Security#Screen_lockers">here</a>.</p>
+<h4 id="wayland">Wayland<a class="headerlink" href="#wayland" title="Permanent link">#</a></h4>
+<p>Available screenlockers are swaylock, hyrplock and waylock, not all compositors support all of them.
+Under kwin <code>loginctl lock-session</code> has to be used in "Session Settings" to trigger its screensaver.</p>
+<h3 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">#</a></h3>
+<p>Locking before suspend and hibernate can be set in  <a href="https://github.com/lxqt/lxqt-session#lxqt-session-settings">LXQt Session Settings</a>. Sometimes configuring a delay is needed when the screen is visible for a short time after resume.</p>
+<p>Locking when idle or on laptop lid closure can be configured in Main menu → Settings → LXQt Settings → Power Management.</p>
+<h4 id="xscreensaver">XScreenSaver<a class="headerlink" href="#xscreensaver" title="Permanent link">#</a></h4>
+<p>XScreenSaver can be configured in Main menu → Settings → Screensaver.</p>
+<h4 id="other-screenlockers-using-xautolock">Other Screenlockers using Xautolock<a class="headerlink" href="#other-screenlockers-using-xautolock" title="Permanent link">#</a></h4>
+<p>Xautolock provides autolocking when idle and can be configured to use any installed screenlocker.
+Please refer to <code>man xautolock</code> for more details about possible configurations. Default timeout for <em>idle</em> is 10min.</p>
+<p>A basic setup consists in adding in  <a href="https://github.com/lxqt/lxqt-session#lxqt-session-settings">LXQt Session Settings</a> under the "Autostart" section a command like  <code>xautolock -locker i3lock</code>.</p>
+<p>A custom screenlocker can be set manually in <code>~/.config/lxqt/lxqt.conf</code> in versions prior to LXQt 2.1:</p>
+<pre><code>[Screensaver]
+lock_command=xsecurelock
+</code></pre>
 
 
 
@@ -1027,10 +1130,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "search.suggest", "content.code.copy", "content.action.edit"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
