@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#git clone https://github.com/lxqt/lxqt.wiki.git tmp/lxqt
-git clone https://github.com/stefonarch/pcmanfm-qt.wiki.git tmp/pcmanfm-qt
+# git clone https://github.com/lxqt/lxqt.wiki.git tmp/lxqt
+# git clone https://github.com/stefonarch/pcmanfm-qt.wiki.git tmp/pcmanfm-qt
 
 # import:
 # mv -v tmp/lxqt/*.md docs/lxqt.wiki
@@ -19,8 +19,9 @@ git clone https://github.com/stefonarch/pcmanfm-qt.wiki.git tmp/pcmanfm-qt
 cp -v docs/lxqt.wiki/custom_actions.md tmp/pcmanfm-qt/
 cp -v docs/lxqt.wiki/Pcmanfm-qt.md  tmp/pcmanfm-qt/Home.md
 cd tmp/pcmanfm-qt
-git add . && git commit -m "Commit from new wiki" && git push  #add identifier?
-cd ../..
-rm -rf tmp/*
+
+# add . && git commit -m "Commit from new wiki" && git push  #add identifier?
+#cd ../..
+#rm -rf tmp/*
 
 
