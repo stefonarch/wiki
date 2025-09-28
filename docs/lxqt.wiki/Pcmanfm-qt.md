@@ -1,4 +1,4 @@
-This is a test for syncing with https://github.com/stefonarch/pcmanfm-qt/wiki
+This is a second test for syncing with https://github.com/stefonarch/pcmanfm-qt/wiki
 
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
