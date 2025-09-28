@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Another test
+=======
+This is a second test for syncing with https://github.com/stefonarch/pcmanfm-qt/wiki
+>>>>>>> eff92ee0be070747976cf7d541cf2683331680f7
 
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
