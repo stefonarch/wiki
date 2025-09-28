@@ -1,6 +1,3 @@
-
-## General
-
 This document is about advanced and, in some cases, hidden properties or functionalities of PCManFM-Qt.
 
 
