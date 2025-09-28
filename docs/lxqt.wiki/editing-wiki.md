@@ -1,12 +1,13 @@
 ## Github Wiki
 
-The main wiki files are located at https://github.com/lxqt/lxqt/wiki and https://github.com/lxqt/pcmanfm-qt.wiki.git. Momentally only LXQt  with push access are able to edit.
+Those wiki files are located at https://github.com/lxqt/lxqt/wiki and https://github.com/lxqt/pcmanfm-qt.wiki.git. 
+Momentally only LXQt members with push access are able to edit but this should be avoided except for PCManFM-Qt's wiki.
 
 ## The improved Wiki
 
-Located at https://github.com/lxqt/doc/wiki is a mirror of the main wiki files using [mkdocs-material](https://squidfunk.github.io/mkdocs-material/).
-
-It's possible to make PRs against it, also using the button on the single pages, but they cannot be merged but have to be copied to the main wiki atm.
+Located at https://github.com/lxqt/doc/wiki using [mkdocs-material](https://squidfunk.github.io/mkdocs-material/). Edits can be done by 
+ PRs against it or direct commit by LXQt members, most easyly using the edit button on the single pages. After the push the wiki is rebuilt by Github actions, the progress can be seen
+ under the "Action" tab for both workflows. 
 
 ## Updating
 
